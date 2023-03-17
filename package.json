@@ -1,0 +1,17 @@
+{
+  "name": "decbase",
+  "version": "1.0.0",
+  "description": "decbase landing page",
+  "main": "index.js",
+  "scripts": {
+    "watch": "node-sass styles-scss/styles.scss styles-css/styles.css -w"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^8.0.0"
+  },
+  "dependencies": {
+    "sass": "^1.59.2"
+  }
+}

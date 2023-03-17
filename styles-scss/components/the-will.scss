@@ -1,0 +1,42 @@
+.the-will {
+  display: flex;
+  //align-items: center;
+  justify-content: space-between;
+  margin-bottom: 23rem;
+  position: relative;
+  &__interior {
+    border-radius: 14rem 0;
+    border: 2px solid $brown-color;
+
+    &-image {
+      transform: translate(30px, 30px);
+      border-radius: 14rem 0;
+    }
+  }
+  &__description {
+    flex: 0 1 40%;
+    &-subheading {
+      @include subheading;
+      font-weight: 500;
+      margin-bottom: 6rem;
+    }
+    &-heading {
+      @include heading;
+    }
+    &-paragraph {
+      @include paragraph;
+      margin-bottom: 3rem;
+    }
+    &__learn-more {
+      .button {
+        display: inline-block;
+        padding: 1rem 2rem;
+      }
+    }
+  }
+  &-decore {
+    position: absolute;
+    bottom: -30%;
+    left: 0;
+  }
+}

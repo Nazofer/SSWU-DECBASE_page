@@ -1,0 +1,46 @@
+.success {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 22.3rem;
+  position: relative;
+  &__description {
+    flex: 0 1 40%;
+    &-subheading {
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 700;
+      font-size: 26.8rem;
+      background-image: url(../img/20subheader.png);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      color: transparent;
+      margin-bottom: 2rem;
+    }
+    &-heading {
+      @include heading;
+      font-size: 5rem;
+      margin-bottom: 2rem;
+    }
+    &__read-more {
+      .button {
+        display: inline-block;
+        padding: 1rem 2rem;
+      }
+    }
+  }
+  &__interior {
+    border-radius: 14rem 0;
+    border: 2px solid $brown-color;
+
+    &-image {
+      transform: translate(-30px, -30px);
+      border-radius: 14rem 0;
+    }
+  }
+  &-decore {
+    position: absolute;
+    bottom: 20%;
+    right: -20%;
+  }
+}

@@ -1,0 +1,116 @@
+.header {
+  // padding-top: 7rem;
+  height: 100vh;
+  position: relative;
+  margin-bottom: 10rem;
+  .nav-wrapper {
+    background-color: white;
+    margin-bottom: 8.5rem;
+    transition: all 0.2s ease-out;
+    .nav-menu {
+     
+      padding: 2rem 0;
+      
+      display: flex;
+      align-items: center;
+      // position: sticky;
+      // top: 0;
+      // left: 0;
+      // z-index: 100;
+      &__links--main {
+        text-transform: uppercase;
+        margin-left: auto;
+        margin-right: 4rem;
+        display: inherit;
+        gap: 1.6rem;
+        .link:hover {
+          border: 2px solid $green-color;
+          border-radius: 2rem;
+          color: $green-color;
+        }
+      }
+      &__links--authorize {
+        .link--sign-up {
+          color: $white-color;
+          background: $dust-color;
+          padding: 0.5rem 1.9rem;
+          font-weight: 600;
+          &:hover {
+            border: 2px solid $dust-color;
+            color: $dust-color;
+            background-color: transparent;
+          }
+        }
+      }
+    }
+    &--sticky {
+      position: fixed;
+      opacity: 1;
+      z-index: 100;
+      top: 0;
+      left: 0;
+      right: 0;
+      margin: 0;
+      //background-color: rgba(255, 241, 223, 1);
+      background-image: radial-gradient(circle, #fff1df, #fff2eb, #fff6f8, #fffbfe, #ffffff);
+      //background-image: radial-gradient(circle, rgba(255, 241, 223, 0.5), rgba(255, 242, 235, 0.5), rgba(255, 246, 248, 0.5), rgba(255, 251, 254, 0.5), rgba(255, 255, 255, 0.5));
+      backdrop-filter: blur(20px);
+      transition: all 3s ease-in;
+    }
+    .nav-progress {
+      height: 0.4rem;
+      width: 0%;
+      transition: width 0.3s ease-out;
+      background-image: linear-gradient(to right, #37806b, #5c9e89, #7fbca8, #a3dcc9, #c8fcea);
+    }
+  }
+  
+
+  .hero {
+    display: flex;
+    gap: 5rem;
+    align-items: center;
+    // margin-bottom: 10rem;
+    // padding-bottom: 10rem;
+    &__description {
+      flex: 0 1 45%;
+      //max-width: 45%;
+      &-subheading {
+        @include subheading;
+        font-weight: 600;
+        margin-bottom: 1.3rem;
+      }
+      &-heading {
+        @include heading;
+        font-weight: 600;
+        font-size: 7.2rem;
+        line-height: 7.8rem;
+        margin-bottom: 2.3rem;
+      }
+      &-paragraph {
+        @include paragraph;
+        margin-bottom: 3.1rem;
+      }
+      &-contact {
+        .button {
+          display: inline-block;
+          padding: 2rem 3rem;
+        }
+      }
+    }
+    &__interior {
+      border-radius: 14rem 0;
+      border: 2px solid $brown-color;
+
+      &-image {
+        transform: translate(-30px, -30px);
+        border-radius: 14rem 0;
+      }
+    }
+  }
+  &-decore {
+    position: absolute;
+    bottom: 5%;
+    left: 0;
+  }
+}

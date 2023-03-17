@@ -1,0 +1,76 @@
+.testimonials {
+  text-align: center;
+  padding-top: 13rem;
+  margin-bottom: 24.5rem;
+  &-subheading {
+    @include subheading;
+  }
+  &-heading {
+    @include heading;
+  }
+  .carousel {
+    &__nav {
+      margin-bottom: 8.5rem;
+      display: flex;
+      // align-items: center;
+      justify-content: right;
+      gap: 5rem;
+      &-btn {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        box-shadow: -1px 3px 10px rgba(0, 0, 0, 0.3);
+      }
+    }
+    &__list {
+      gap: 17rem;
+      display: flex;
+      justify-content: space-between;
+      .card {
+        padding: 4rem 3rem 6rem 9rem;
+        position: relative;
+        background: $white-color;
+        box-shadow: 7px 7px 30px 5px rgba(66, 96, 84, 0.15);
+        border-radius: 70px 0px;
+        &-header {
+          font-family: 'Open Sans';
+          font-weight: 700;
+          font-size: 2.4rem;
+          line-height: 3.3rem;
+          color: $main-black;
+          margin-bottom: 0.8rem;
+          text-align: left;
+          & span {
+            @include paragraph;
+            color: $grey-color;
+          }
+        }
+        &-quotes {
+          font-family: 'Open Sans';
+          font-style: italic;
+          font-weight: 700;
+          font-size: 96px;
+
+          position: absolute;
+          top: 2rem;
+          right: 4rem;
+
+          color: $brown-color;
+        }
+        &-paragraph {
+          @include paragraph;
+          color: $grey-color;
+        }
+        .avatar {
+          position: absolute;
+          left: -10%;
+          top: 20%;
+          border-radius: 35px 0px;
+        }
+      }
+    }
+  }
+}
