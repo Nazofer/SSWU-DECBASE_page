@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DECBASE</title>
     <link rel="stylesheet" href="./styles-css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
   </head>
   <body>
     <div class="loading-animation">
@@ -228,45 +232,123 @@
           <h2 class="testimonials-heading">Client says about us</h2>
           <div class="carousel">
             <nav class="carousel__nav">
-              <a href="#" class="carousel__nav-btn"
-                ><img src="./img/carousel-arrow-left.svg" alt="back buttton"
+              <a href="#" class="carousel__nav-btn carousel-arrow-left"
+                ><img src="./img/carousel-arrow-left.svg"
               /></a>
-              <a href="#" class="carousel__nav-btn"
-                ><img src="./img/carousel-arrow-right.svg" alt="forward button"
+              <a href="#" class="carousel__nav-btn carousel-arrow-right"
+                ><img src="./img/carousel-arrow-right.svg"
               /></a>
             </nav>
             <div class="carousel__list">
-              <div class="carousel__list-card card">
-                <h3 class="card-header">
-                  Louis Saville<span>/CEO at Google inc</span>
-                </h3>
-                <p class="card-quotes">"</p>
-                <p class="card-paragraph">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                </p>
-                <img
-                  src="./img/testimonials-avatar1.png"
-                  alt=""
-                  class="avatar"
-                />
-              </div>
-              <div class="carousel__list-card card">
-                <h3 class="card-header">
-                  Rekha Varadwaz<span>/Manager at Nike inc</span>
-                </h3>
-                <p class="card-quotes">"</p>
-                <p class="card-paragraph">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                </p>
-                <img
-                  src="./img/testimonials-avatar2.png"
-                  alt=""
-                  class="avatar"
-                />
+              <div class="carousel__list-wrapper swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="carousel__list-card card">
+                    <h3 class="card-header">
+                      Louis Saville<span>/CEO at Google inc</span>
+                    </h3>
+                    <p class="card-quotes">"</p>
+                    <p class="card-paragraph">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua.
+                    </p>
+                    <img
+                      src="./img/testimonials-avatar1.png"
+                      alt=""
+                      class="avatar"
+                    />
+                  </div>
+
+                  <div class="carousel__list-card card">
+                    <h3 class="card-header">
+                      Rekha Varadwaz<span>/Manager at Nike inc</span>
+                    </h3>
+                    <p class="card-quotes">"</p>
+                    <p class="card-paragraph">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua.
+                    </p>
+                    <img
+                      src="./img/testimonials-avatar2.png"
+                      alt=""
+                      class="avatar"
+                    />
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="carousel__list-card card">
+                    <h3 class="card-header">
+                      Louis Saville<span>/CEO at Google inc</span>
+                    </h3>
+                    <p class="card-quotes">"</p>
+                    <p class="card-paragraph">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua.
+                    </p>
+                    <img
+                      src="./img/testimonials-avatar1.png"
+                      alt=""
+                      class="avatar"
+                    />
+                  </div>
+
+                  <div class="carousel__list-card card">
+                    <h3 class="card-header">
+                      Rekha Varadwaz<span>/Manager at Nike inc</span>
+                    </h3>
+                    <p class="card-quotes">"</p>
+                    <p class="card-paragraph">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua.
+                    </p>
+                    <img
+                      src="./img/testimonials-avatar2.png"
+                      alt=""
+                      class="avatar"
+                    />
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="carousel__list-card card">
+                    <h3 class="card-header">
+                      Louis Saville<span>/CEO at Google inc</span>
+                    </h3>
+                    <p class="card-quotes">"</p>
+                    <p class="card-paragraph">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua.
+                    </p>
+                    <img
+                      src="./img/testimonials-avatar1.png"
+                      alt=""
+                      class="avatar"
+                    />
+                  </div>
+
+                  <div class="carousel__list-card card">
+                    <h3 class="card-header">
+                      Rekha Varadwaz<span>/Manager at Nike inc</span>
+                    </h3>
+                    <p class="card-quotes">"</p>
+                    <p class="card-paragraph">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua.
+                    </p>
+                    <img
+                      src="./img/testimonials-avatar2.png"
+                      alt=""
+                      class="avatar"
+                    />
+                  </div>
+                </div>
               </div>
             </div>
+            <div class="swiper-pagination"></div>
           </div>
         </section>
         <section class="news" id="news">
@@ -281,6 +363,7 @@
                   class="card-interior-image"
                 />
               </div>
+              
               <h3 class="card-subheading">2020 Interior Design Trends</h3>
               <p class="card-paragraph">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -404,6 +487,26 @@
       <script src="./js/scrollTo.js"></script>
       <script src="./js/NavBarProgress.js"></script>
       <script src="./js/what-we-do.js"></script>
+      <!-- Swiper JS -->
+      <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+      <!-- Initialize Swiper -->
+      <script>
+        const swiper = new Swiper('.carousel__list', {
+          slidesPerView: 1,
+          spaceBetween: 400,
+          // swipesPerGroup: 1,
+          loop: true,
+          pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+          },
+          navigation: {
+            nextEl: '.carousel-arrow-right',
+            prevEl: '.carousel-arrow-left',
+          },
+        });
+      </script>
     </div>
   </body>
 </html>

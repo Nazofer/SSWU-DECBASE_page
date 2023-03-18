@@ -491,7 +491,8 @@ h6 {
 .testimonials {
   text-align: center;
   padding-top: 13rem;
-  margin-bottom: 24.5rem; }
+  margin-bottom: 24.5rem;
+  position: relative; }
   .testimonials-subheading {
     font-family: 'Poppins', sans-serif;
     font-size: 2rem;
@@ -519,17 +520,17 @@ h6 {
       align-items: center;
       display: flex;
       box-shadow: -1px 3px 10px rgba(0, 0, 0, 0.3); }
-  .testimonials .carousel__list {
-    gap: 17rem;
+  .testimonials .carousel__list-wrapper .swiper-slide {
     display: flex;
-    justify-content: space-between; }
-    .testimonials .carousel__list .card {
+    justify-content: space-between;
+    gap: 17rem; }
+    .testimonials .carousel__list-wrapper .swiper-slide .card {
       padding: 4rem 3rem 6rem 9rem;
       position: relative;
       background: #fff;
       box-shadow: 7px 7px 30px 5px rgba(66, 96, 84, 0.15);
       border-radius: 70px 0px; }
-      .testimonials .carousel__list .card-header {
+      .testimonials .carousel__list-wrapper .swiper-slide .card-header {
         font-family: 'Open Sans';
         font-weight: 700;
         font-size: 2.4rem;
@@ -537,14 +538,14 @@ h6 {
         color: #212121;
         margin-bottom: 0.8rem;
         text-align: left; }
-        .testimonials .carousel__list .card-header span {
+        .testimonials .carousel__list-wrapper .swiper-slide .card-header span {
           font-family: 'Open Sans', sans-serif;
           font-weight: 400;
           font-size: 1.8rem;
           line-height: 3rem;
           /* or 167% */
           color: #646464; }
-      .testimonials .carousel__list .card-quotes {
+      .testimonials .carousel__list-wrapper .swiper-slide .card-quotes {
         font-family: 'Open Sans';
         font-style: italic;
         font-weight: 700;
@@ -553,18 +554,22 @@ h6 {
         top: 2rem;
         right: 4rem;
         color: #b0855b; }
-      .testimonials .carousel__list .card-paragraph {
+      .testimonials .carousel__list-wrapper .swiper-slide .card-paragraph {
         font-family: 'Open Sans', sans-serif;
         font-weight: 400;
         font-size: 1.8rem;
         line-height: 3rem;
         /* or 167% */
         color: #646464; }
-      .testimonials .carousel__list .card .avatar {
+      .testimonials .carousel__list-wrapper .swiper-slide .card .avatar {
         position: absolute;
         left: -10%;
         top: 20%;
         border-radius: 35px 0px; }
+  .testimonials .carousel .swiper-pagination {
+    bottom: -23rem; }
+    .testimonials .carousel .swiper-pagination .swiper-pagination-bullet-active {
+      background-color: #37806b; }
 
 .news {
   padding: 9.3rem 0 12rem;
@@ -595,7 +600,14 @@ h6 {
       flex: 0 1 45%;
       display: flex;
       flex-direction: column;
-      align-items: center; }
+      text-align: left; }
+      .news__main .card:hover .card-interior-image {
+        transform: scale3d(1.05, 1.05, 1); }
+      .news__main .card:hover .card-paragraph {
+        transform: translateY(0);
+        opacity: 1; }
+      .news__main .card:hover .card-continue .button {
+        transform: translateY(0); }
       .news__main .card-interior {
         border-radius: 10rem 0;
         border: 2px solid #b0855b;
@@ -603,12 +615,12 @@ h6 {
         width: fit-content; }
         .news__main .card-interior-image {
           transform: translate(-30px, -30px);
-          border-radius: 10rem 0; }
+          border-radius: 10rem 0;
+          transition: 0.3s ease-in-out; }
       .news__main .card-subheading {
         font-family: 'Open Sans';
         font-weight: 600;
         font-size: 3rem;
-        line-height: 2.8rem;
         color: #212121;
         margin-bottom: 1.7rem; }
       .news__main .card-paragraph {
@@ -617,12 +629,15 @@ h6 {
         font-size: 1.8rem;
         line-height: 3rem;
         /* or 167% */
-        margin-bottom: 4.5rem; }
-      .news__main .card-continue {
-        align-self: flex-start; }
-        .news__main .card-continue .button {
-          display: inline-block;
-          padding: 1.4rem 3.5rem; }
+        margin-bottom: 4rem;
+        opacity: 0;
+        transform: translateY(-4.5rem);
+        transition: all 0.3s ease-in-out; }
+      .news__main .card-continue .button {
+        transform: translateY(-9rem);
+        display: inline-block;
+        padding: 1.4rem 3.5rem;
+        transition: all 0.3s ease-in-out; }
   .news-decore {
     position: absolute;
     bottom: -10%;

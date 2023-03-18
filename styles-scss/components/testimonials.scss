@@ -2,6 +2,7 @@
   text-align: center;
   padding-top: 13rem;
   margin-bottom: 24.5rem;
+  position: relative;
   &-subheading {
     @include subheading;
   }
@@ -26,50 +27,61 @@
       }
     }
     &__list {
-      gap: 17rem;
-      display: flex;
-      justify-content: space-between;
-      .card {
-        padding: 4rem 3rem 6rem 9rem;
-        position: relative;
-        background: $white-color;
-        box-shadow: 7px 7px 30px 5px rgba(66, 96, 84, 0.15);
-        border-radius: 70px 0px;
-        &-header {
-          font-family: 'Open Sans';
-          font-weight: 700;
-          font-size: 2.4rem;
-          line-height: 3.3rem;
-          color: $main-black;
-          margin-bottom: 0.8rem;
-          text-align: left;
-          & span {
-            @include paragraph;
-            color: $grey-color;
+      &-wrapper {
+        .swiper-slide {
+          display: flex;
+          justify-content: space-between;
+          gap: 17rem;
+          .card {
+            padding: 4rem 3rem 6rem 9rem;
+            position: relative;
+            background: $white-color;
+            box-shadow: 7px 7px 30px 5px rgba(66, 96, 84, 0.15);
+            border-radius: 70px 0px;
+            &-header {
+              font-family: 'Open Sans';
+              font-weight: 700;
+              font-size: 2.4rem;
+              line-height: 3.3rem;
+              color: $main-black;
+              margin-bottom: 0.8rem;
+              text-align: left;
+              & span {
+                @include paragraph;
+                color: $grey-color;
+              }
+            }
+            &-quotes {
+              font-family: 'Open Sans';
+              font-style: italic;
+              font-weight: 700;
+              font-size: 96px;
+
+              position: absolute;
+              top: 2rem;
+              right: 4rem;
+
+              color: $brown-color;
+            }
+            &-paragraph {
+              @include paragraph;
+              color: $grey-color;
+            }
+            .avatar {
+              position: absolute;
+              left: -10%;
+              top: 20%;
+              border-radius: 35px 0px;
+            }
           }
         }
-        &-quotes {
-          font-family: 'Open Sans';
-          font-style: italic;
-          font-weight: 700;
-          font-size: 96px;
+      }
+    }
+    .swiper-pagination {
+      bottom: -23rem;
 
-          position: absolute;
-          top: 2rem;
-          right: 4rem;
-
-          color: $brown-color;
-        }
-        &-paragraph {
-          @include paragraph;
-          color: $grey-color;
-        }
-        .avatar {
-          position: absolute;
-          left: -10%;
-          top: 20%;
-          border-radius: 35px 0px;
-        }
+      .swiper-pagination-bullet-active {
+        background-color: $green-color;
       }
     }
   }

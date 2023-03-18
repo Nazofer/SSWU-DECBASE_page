@@ -6,9 +6,11 @@ const getContent = (arr) => {
         if (
           value.includes('http') ||
           !isNaN(Date.parse(value)) ||
-          !isNaN(+value)
-        )
+          !isNaN(+value) ||
+          acc.length > 150
+        ) {
           return acc;
+        }
         return `${acc} ${key}: ${value}, `;
       }
       return acc;
@@ -37,7 +39,6 @@ const fetchAll = async () => {
 };
 
 const renderCards = async (data) => {
-  console.log(data);
   const cardsContainer = document.querySelector(`.service__cards`);
   cardsContainer.innerHTML = '';
   data.forEach((item) => {
