@@ -355,7 +355,7 @@
           <h3 class="news-subheading">Latest news</h3>
           <h2 class="news-heading">From Our Blog</h2>
           <div class="news__main container">
-            <div class="news__main--trends card">
+            <div class="news__main-card card">
               <div class="card-interior">
                 <img
                   src="./img/news-trends.png"
@@ -363,7 +363,7 @@
                   class="card-interior-image"
                 />
               </div>
-              
+
               <h3 class="card-subheading">2020 Interior Design Trends</h3>
               <p class="card-paragraph">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -373,7 +373,7 @@
                 <a href="#" class="button">Continue reading...</a>
               </div>
             </div>
-            <div class="news__main--notable card">
+            <div class="news__main-card card">
               <div class="card-interior">
                 <img
                   src="./img/news-notable.png"
@@ -402,24 +402,43 @@
             Find out early about all upcoming promotions and new product
             releases with our newsletter.
           </h3>
-          <form action="" class="authorize__form">
-            <div class="row">
-              <input
-                type="text"
-                class="authorize__form-input"
-                placeholder="Enter your name....."
-              />
-              <input
-                type="text"
-                class="authorize__form-input"
-                placeholder="Enter your surname....."
-              />
+          <form action="" class="authorize__form form">
+            <div class="form__modal">
+              <div class="form__modal-content">
+                <h2 class="form__modal-heading">Welcome back!</h2>
+                <p class="form__modal-message">As a thank you for subscribing, we're offering you 10% off your next purchase. Use code WELCOME10 at checkout.</p>
+                <button type="button"class="form__modal-close">&times;</button>
+              </div>
             </div>
-            <input
-              type="text"
-              placeholder="Enter your e-mail....."
-              class="authorize__form-email"
-            />
+            <div class="row">
+              <div class="form__input">
+                <input
+                  name="name"
+                  type="text"
+                  class="form__input-text"
+                  placeholder="Enter your name....."
+                />
+                <p class="form__input-error"></p>
+              </div>
+              <div class="form__input">
+                <input
+                  name="surname"
+                  type="text"
+                  class="form__input-text"
+                  placeholder="Enter your surname....."
+                />
+                <p class="form__input-error"></p>
+              </div>
+            </div>
+            <div class="form__input form__input--last">
+              <input
+                name="email"
+                type="email"
+                placeholder="Enter your e-mail....."
+                class="form__input-email"
+              />
+              <p class="form__input-error"></p>
+            </div>
             <button type="submit" class="button">SUBSCRIBE</button>
           </form>
         </section>
@@ -487,6 +506,8 @@
       <script src="./js/scrollTo.js"></script>
       <script src="./js/NavBarProgress.js"></script>
       <script src="./js/what-we-do.js"></script>
+      <script src="./js/latestNews.js"></script>
+      <script src="./js/validateForm.js"></script>
       <!-- Swiper JS -->
       <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 
