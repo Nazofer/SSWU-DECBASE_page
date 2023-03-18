@@ -175,6 +175,14 @@ h6 {
   100% {
     transform: translate(24px, 0); } }
 
+@keyframes lds-ellipsis4 {
+  0% {
+    transform: translate(0, 0) scale(1); }
+  50% {
+    transform: translate(24px, 0) scale(0.5); }
+  100% {
+    transform: translate(48px, 0) scale(1); } }
+
 .header {
   height: 100vh;
   position: relative;
@@ -685,14 +693,15 @@ h6 {
     .authorize .form__input--last {
       margin-bottom: 9.2rem; }
     .authorize .form__input-error {
+      text-align: left;
       font-family: 'Open Sans', sans-serif;
       font-weight: 400;
       font-size: 1.8rem;
       line-height: 3rem;
       /* or 167% */
       color: red; }
-    .authorize .form__input-text--invalid {
-      border-top: red; }
+    .authorize .form__input--invalid {
+      border: 1px solid red; }
   .authorize .form input {
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
@@ -748,8 +757,8 @@ h6 {
       margin-bottom: 20px; }
     .authorize .form .form__modal-close {
       position: absolute;
-      top: 10px;
-      right: 10px;
+      top: 0;
+      right: 1rem;
       font-size: 30px;
       font-weight: bold;
       color: #888;
@@ -768,11 +777,17 @@ h6 {
       height: 100%;
       background-color: rgba(0, 0, 0, 0.5);
       z-index: 999; }
+      .authorize .form .form__modal--visible #my-canvas {
+        position: absolute;
+        inset: 0;
+        z-index: 100; }
       .authorize .form .form__modal--visible .form__modal-content {
-        background-color: #fff;
+        z-index: 999;
+        background: linear-gradient(to right, #ffefba, #ffffff);
         padding: 20px;
-        border-radius: 5px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); }
+        border-radius: 1rem;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        min-height: 25rem; }
 
 .footer {
   background-color: #F8F8F8;

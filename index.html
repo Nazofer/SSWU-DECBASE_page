@@ -121,26 +121,6 @@
                 and numerous customizations.
               </p>
             </div>
-            <!-- <div class="card">
-              <img src="./img/icon-blueprint.png" alt="" class="icon" />
-              <div class="card__description">
-                <h4 class="card__description-heading">Architecture 1</h4>
-                <p class="card__description-paragraph">
-                  Lorem ipsum dolor amet consectetur adipiscing elit sed eiusmod
-                  tempor incididunt ut labore.
-                </p>
-              </div>
-            </div>
-            <div class="card">
-              <img src="./img/icon-plan.png" alt="" class="icon" />
-              <div class="card__description">
-                <h4 class="card__description-heading">Planning 1</h4>
-                <p class="card__description-paragraph">
-                  Lorem ipsum dolor amet consectetur adipiscing elit sed eiusmod
-                  tempor incididunt ut labore.
-                </p>
-              </div>
-            </div> -->
           </div>
           <img src="./img/service-decor.svg" class="service-decore" />
         </section>
@@ -404,10 +384,11 @@
           </h3>
           <form action="" class="authorize__form form">
             <div class="form__modal">
+              <canvas id="my-canvas"></canvas>
               <div class="form__modal-content">
                 <h2 class="form__modal-heading">Welcome back!</h2>
-                <p class="form__modal-message">As a thank you for subscribing, we're offering you 10% off your next purchase. Use code WELCOME10 at checkout.</p>
-                <button type="button"class="form__modal-close">&times;</button>
+                <p class="form__modal-message" id="congrats-auth-message"></p>
+                <button type="button" class="form__modal-close">&times;</button>
               </div>
             </div>
             <div class="row">
@@ -508,9 +489,12 @@
       <script src="./js/what-we-do.js"></script>
       <script src="./js/latestNews.js"></script>
       <script src="./js/validateForm.js"></script>
+      <!-- Confetti-js -->
+      <script src="https://cdn.jsdelivr.net/npm/confetti-js"></script>
+      <script src="./js/confetti.js"></script>
       <!-- Swiper JS -->
       <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-
+      
       <!-- Initialize Swiper -->
       <script>
         const swiper = new Swiper('.carousel__list', {
