@@ -38,10 +38,10 @@ body {
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  max-width: 100%; }
 
 body {
-  overflow-x: hidden;
   position: relative; }
 
 html {
@@ -1088,8 +1088,8 @@ h6 {
     gap: 1rem;
     margin-bottom: 1rem; } }
 
-/* BELOW 544px (Phones) */
-@media (max-width: 34em) {
+/* BELOW 592px (Phones) */
+@media (max-width: 37em) {
   .footer__main .row {
     flex-direction: column; }
   .service__nav-menu {
