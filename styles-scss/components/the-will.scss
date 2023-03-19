@@ -2,19 +2,25 @@
   display: flex;
   //align-items: center;
   justify-content: space-between;
+  //gap: 5rem;
   margin-bottom: 23rem;
   position: relative;
   &__interior {
     border-radius: 14rem 0;
     border: 2px solid $brown-color;
-
+    height: 70rem;
     &-image {
       transform: translate(30px, 30px);
       border-radius: 14rem 0;
+      width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
   }
   &__description {
     flex: 0 1 40%;
+    min-width: 50rem;
+    margin-left: 7rem;
     &-subheading {
       @include subheading;
       font-weight: 500;
@@ -39,4 +45,14 @@
     bottom: -30%;
     left: 0;
   }
+}
+
+.about {
+  position: relative;
+  &-decore {
+    position: absolute;
+    top: -20%;
+    right: -10%;
+  }
+
 }

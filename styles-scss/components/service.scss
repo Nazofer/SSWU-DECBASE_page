@@ -11,9 +11,10 @@
   &__nav-menu {
     display: flex;
     align-items: center;
-    gap: 7.7rem;
+    justify-content: space-between ;
     padding-left: 1.5rem;
     margin-bottom: 11rem;
+    max-width: 120rem;
     .button {
       min-width: 18rem;
       text-align: center;
@@ -25,7 +26,6 @@
         background-color: #4bb093;
         border-color: transparent;
       }
-      
     }
     .active {
       background-color: $white-color;
@@ -56,18 +56,8 @@
         &-heading {
           font-weight: 700;
           font-size: 2.4rem;
-          
         }
       }
     }
-    // &--architecture-card {
-    //   background-color: $dust-color;
-    //   color: $white-color;
-    // }
-  }
-  &-decore {
-    position: absolute;
-    bottom: -90%;
-    right: 0;
   }
 }

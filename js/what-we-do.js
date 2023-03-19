@@ -71,10 +71,10 @@ let activeBtn = null;
 
 buttons.forEach((button) => {
   button.addEventListener('click', () => {
-    if (button === activeBtn) return; // Do nothing if active button is clicked again
-    activeBtn?.classList.remove('active'); // Remove active class from previous active button if there was one
+    if (button === activeBtn) return;
+    activeBtn?.classList.remove('active');
     activeBtn = button;
-    activeBtn.classList.add('active'); // Add active class to clicked button
+    activeBtn.classList.add('active');
     const category = button.id;
     renderCards(data[category]);
   });

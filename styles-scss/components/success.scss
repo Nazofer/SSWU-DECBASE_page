@@ -6,6 +6,8 @@
   position: relative;
   &__description {
     flex: 0 1 40%;
+    min-width: 50rem;
+    margin-right: 7rem;
     &-subheading {
       font-family: 'Open Sans', sans-serif;
       font-weight: 700;
@@ -32,10 +34,13 @@
   &__interior {
     border-radius: 14rem 0;
     border: 2px solid $brown-color;
-
+    height: 71rem;
     &-image {
       transform: translate(-30px, -30px);
       border-radius: 14rem 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
     }
   }
   &-decore {

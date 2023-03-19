@@ -8,7 +8,6 @@ navLinks.forEach((link) => {
     const top = targetSection.getBoundingClientRect().top;
     const navHeight = document
       .querySelector('.nav-wrapper')
-      //.getBoundingClientRect().height;
       .offsetHeight
     const targetPosition = window.pageYOffset + top - navHeight;
     window.scrollTo({

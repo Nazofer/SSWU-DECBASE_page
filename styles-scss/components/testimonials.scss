@@ -1,7 +1,8 @@
 .testimonials {
+  //overflow: hidden;
   text-align: center;
   padding-top: 13rem;
-  margin-bottom: 24.5rem;
+  margin-bottom: 24.5rem !important;
   position: relative;
   &-subheading {
     @include subheading;
@@ -10,10 +11,10 @@
     @include heading;
   }
   .carousel {
+    
     &__nav {
       margin-bottom: 8.5rem;
       display: flex;
-      // align-items: center;
       justify-content: right;
       gap: 5rem;
       &-btn {
@@ -27,6 +28,7 @@
       }
     }
     &__list {
+      
       &-wrapper {
         .swiper-slide {
           display: flex;

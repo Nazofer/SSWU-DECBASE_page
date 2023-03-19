@@ -1,7 +1,8 @@
 .authorize {
   padding-top: 8rem;
   text-align: center;
-  max-width: 77rem;
+  max-width: 87rem;
+  padding: 0 5rem;
   margin: 0 auto;
   padding-bottom: 10rem;
   position: relative;
@@ -38,7 +39,6 @@
         color: red;
       }
       &--invalid {
-        //border-top: red;
         border: 1px solid red
       }
     }

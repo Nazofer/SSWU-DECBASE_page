@@ -41,6 +41,9 @@
             <div class="nav-menu__links--authorize">
               <a href="#" class="link link--sign-up button">Sign Up</a>
             </div>
+            <div class="nav-menu__links--burger">
+              <img src="./img/menu-hamburger.svg" />
+            </div>
           </nav>
           <div class="nav-progress"></div>
         </div>
@@ -122,9 +125,9 @@
               </p>
             </div>
           </div>
-          <img src="./img/service-decor.svg" class="service-decore" />
         </section>
         <section class="about container" id="about">
+          <img src="./img/service-decor.svg" class="about-decore" />
           <article class="the-will">
             <div class="the-will__interior">
               <img
@@ -433,29 +436,31 @@
               pleasure.
             </p>
           </div>
-          <nav class="footer__main__quick-links col">
-            <h3 class="footer__main-subheading">Quick links</h3>
-            <a href="#" class="link">About our company</a>
-            <a href="#" class="link">Services WE provide</a>
-            <a href="#" class="link">Career & Opportunity</a>
-            <a href="#" class="link">Privacy & policy</a>
-            <a href="#" class="link">Contact US</a>
-          </nav>
-          <nav class="footer__main__company col">
-            <h3 class="footer__main-subheading">Company</h3>
-            <a href="#" class="link">About Company</a>
-            <a href="#" class="link">Our Testimonials</a>
-            <a href="#" class="link">Latest News</a>
-            <a href="#" class="link">Our mission</a>
-            <a href="#" class="link">Get a Free Quot</a>
-          </nav>
-          <nav class="footer__main__contact col">
-            <h3 class="footer__main-subheading">Contact us</h3>
-            <a href="#" class="link">Sagrada Familia, Herba</a>
-            <a href="#" class="link">Street Front USA</a>
-            <a href="#" class="link">brandoxide@gmail.com</a>
-            <a href="#" class="link">002-568423591</a>
-          </nav>
+          <div class="row">
+            <nav class="footer__main__quick-links col">
+              <h3 class="footer__main-subheading">Quick links</h3>
+              <a href="#" class="link">About our company</a>
+              <a href="#" class="link">Services WE provide</a>
+              <a href="#" class="link">Career & Opportunity</a>
+              <a href="#" class="link">Privacy & policy</a>
+              <a href="#" class="link">Contact US</a>
+            </nav>
+            <nav class="footer__main__company col">
+              <h3 class="footer__main-subheading">Company</h3>
+              <a href="#" class="link">About Company</a>
+              <a href="#" class="link">Our Testimonials</a>
+              <a href="#" class="link">Latest News</a>
+              <a href="#" class="link">Our mission</a>
+              <a href="#" class="link">Get a Free Quot</a>
+            </nav>
+            <nav class="footer__main__contact col">
+              <h3 class="footer__main-subheading">Contact us</h3>
+              <a href="#" class="link">Sagrada Familia, Herba</a>
+              <a href="#" class="link">Street Front USA</a>
+              <a href="#" class="link">brandoxide@gmail.com</a>
+              <a href="#" class="link">002-568423591</a>
+            </nav>
+          </div>
           <nav class="footer__main__follow col">
             <h3 class="footer__main-subheading">Follow Us</h3>
             <div class="footer__main__follow-links">
@@ -489,11 +494,12 @@
       <script src="./js/what-we-do.js"></script>
       <script src="./js/latestNews.js"></script>
       <script src="./js/validateForm.js"></script>
+      <script src="./js/alert.js"></script>
       <!-- Confetti-js -->
       <script src="https://cdn.jsdelivr.net/npm/confetti-js"></script>
       <!-- Swiper JS -->
       <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-      
+
       <!-- Initialize Swiper -->
       <script>
         const swiper = new Swiper('.carousel__list', {

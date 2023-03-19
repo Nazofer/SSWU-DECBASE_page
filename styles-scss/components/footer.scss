@@ -5,11 +5,18 @@
     padding-top: 9.3rem;
     display: flex;
     justify-content: space-between;
+    
     margin-bottom: 7rem;
+    .row {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      column-gap: 2rem;
+    }
     .col {
       display: flex;
       flex-direction: column;
-      gap: 2.5rem;
+      gap: 2rem;
+      align-items: flex-start;
     }
     &__logo {
       .logo {
@@ -27,16 +34,23 @@
       font-weight: 600;
       color: $main-black;
       margin-bottom: 1rem;
+      text-align: left;
     }
     .link {
       @include paragraph;
       color: $grey-color;
+      padding: 0;
+      border: 0;
       &:hover {
         text-decoration: underline;
       }
     }
+    &__contact {
+      flex-shrink: 1;
+
+    }
     &__follow {
-      align-items: center;
+      align-items: center !important;
       &-links {
         display: flex;
         gap: 8px;
