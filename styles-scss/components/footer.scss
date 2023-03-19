@@ -8,9 +8,8 @@
     
     margin-bottom: 7rem;
     .row {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      column-gap: 2rem;
+      display: flex;      
+      gap: 2rem;
     }
     .col {
       display: flex;

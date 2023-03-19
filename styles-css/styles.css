@@ -37,10 +37,12 @@ body {
   line-height: 1;
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%; }
+  -webkit-text-size-adjust: 100%;
+  overflow-x: hidden; }
 
 body {
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  position: relative; }
 
 html {
   font-size: 16px;
@@ -833,9 +835,8 @@ h6 {
     justify-content: space-between;
     margin-bottom: 7rem; }
     .footer__main .row {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      column-gap: 2rem; }
+      display: flex;
+      gap: 2rem; }
     .footer__main .col {
       display: flex;
       flex-direction: column;
@@ -1088,3 +1089,10 @@ h6 {
     margin-bottom: 1rem; } }
 
 /* BELOW 544px (Phones) */
+@media (max-width: 34em) {
+  .footer__main .row {
+    flex-direction: column; }
+  .service__nav-menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem; } }

@@ -324,4 +324,18 @@
 /* BELOW 544px (Phones) */
 
 @media (max-width: 34em) {
+  .footer {
+    &__main {
+      .row {
+        flex-direction: column;
+      }
+    }
+  }
+  .service {
+    &__nav-menu {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+    }
+  }
 }
