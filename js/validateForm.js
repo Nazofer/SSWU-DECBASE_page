@@ -80,7 +80,7 @@ const showGreetingModal = () => {
          You can use ${name.toUpperCase()}${year} promo to apply 12% discount!!!`;
         addModalVisibility();
         closeModalBtn.addEventListener('click', removeModalVisibility);
-        setTimeout(removeModalVisibility, 5000);
+        //setTimeout(removeModalVisibility, 5000);
       }
     } catch (error) {
       console.error(error);

@@ -37,12 +37,15 @@ body {
   line-height: 1;
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%; }
+
+.body {
   overflow-x: hidden;
-  max-width: 100%; }
+  position: relative; }
 
 body {
-  position: relative; }
+  position: relative;
+  margin: 0; }
 
 html {
   font-size: 16px;
@@ -232,6 +235,7 @@ h6 {
       top: 0;
       left: 0;
       right: 0;
+      bottom: auto;
       margin: 0;
       background-image: radial-gradient(circle, #fff1df, #fff2eb, #fff6f8, #fffbfe, #ffffff);
       backdrop-filter: blur(20px);
@@ -540,13 +544,15 @@ h6 {
     line-height: 3rem;
     text-transform: uppercase;
     color: #646464;
-    /* or 150% */ }
+    /* or 150% */
+    margin-bottom: 1rem; }
   .testimonials-heading {
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
     font-size: 4.8rem;
     line-height: 5.7rem;
-    /* or 119% */ }
+    /* or 119% */
+    margin-bottom: 3rem; }
   .testimonials .carousel__nav {
     margin-bottom: 8.5rem;
     display: flex;
@@ -772,7 +778,7 @@ h6 {
       margin: 15% auto;
       padding: 20px;
       border: 1px solid #888;
-      width: 50%;
+      width: 75%;
       max-width: 500px;
       text-align: center;
       position: relative; }
@@ -1095,4 +1101,5 @@ h6 {
   .service__nav-menu {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 2rem; } }
+    gap: 2rem;
+    margin-bottom: 3rem; } }

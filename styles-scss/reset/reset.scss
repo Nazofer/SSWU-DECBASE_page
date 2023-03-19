@@ -36,12 +36,20 @@ body {
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
-  overflow-x: hidden;
-  max-width: 100%;
+  //overflow-x: hidden;
+  //max-width: 100%;
 }
+
+.body {
+  overflow-x: hidden;
+  position: relative;
+}
+
 body {
   position: relative;
   // color: $main-black;
+  margin: 0;
+
 }
 html {
   //scroll-behavior: smooth;
