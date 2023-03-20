@@ -63,7 +63,7 @@ let data = {};
   data.people = await fetchData('people');
   data.starships = await fetchData('starships');
   data.species = await fetchData('species');
-  console.log(data);
+  //console.log(data);
 })();
 
 const buttons = document.querySelectorAll('.service__nav-menu button');
